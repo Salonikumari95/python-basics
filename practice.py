@@ -10,7 +10,7 @@
 # 5. Write a python program to find an average of two
 # numbers entered by the user.
 
-# 6. Write a python program to calculate the square of a 
+# 6. Write a python program to calculate the square of a
 # number entered by the user.
 
 # 1.
@@ -33,15 +33,15 @@ b = 84
 if (a > b):
     print("A is greater no")
 else:
-    print("B is greater no")   
-    
+    print("B is greater no")
+
 # 5.
 a = int(input("Enter 1st number:"))
-b = int(input("Enter 2nd number:")) 
-print(f"Average of two no is : {(a+b)/2}")  
+b = int(input("Enter 2nd number:"))
+print(f"Average of two no is : {(a+b)/2}")
 
 # 6.
-v = int(input("Enter any number:"))  
+v = int(input("Enter any number:"))
 print(f"Square of no is : {v**2}")
 
 
@@ -54,10 +54,79 @@ print(f"Square of no is : {v**2}")
 # Dear <Name>,
 # You are selected!
 # </Date|>
+
 # 3. Write a program to detect double space in a string.
 
 # 4. Replace the double space from problem 3 with single spaces.
 
-# 5. Write a program to format the following letter using 
+# 5. Write a program to format the following letter using
 # escape sequence characters.
-# Letter = "Dear Saloni
+# Letter = "Dear Saloni,This python practice is nice.Thanks!"
+
+# 1.
+name = input("Enter your name:")
+print(f"Good Afternoon {name}")
+
+# 2.
+name = input("Enter your name:")
+date = input("Enter Day month year:")
+print(f'''
+      Dear,{name}
+      you are selected !
+      {date}
+      ''')
+
+# 3. & 4.
+s = input("Enter any sentence:")
+if ("  " in s):
+    print("Double space detected")
+    print(s.replace("  ", " "))
+else:
+    print("No double space")
+
+# 5.
+print("Dear Saloni, This python practice is nice. Thanks!")
+
+
+# 1. Write a program to store seven fruits in a list entered by the user.
+
+# 2. Write a program to accept marks of 6 students and display them in a
+# sorted manner.
+
+# 3. Check that a type cannot be changed in python.
+
+# 4. Write a program to sum a list with 4 numbers.
+
+# 5. Write a program to count the number of zeros in the following tuple:
+
+# 1.
+p = []
+for i in range(7):
+    fruit = int(input("Enter Fruits name:"))
+    p.append(fruit)
+print(p)
+
+# 2.
+marks = []
+for i in range(6):
+    m = int(input("Enter your marks:"))
+    marks.append(m)
+    marks.sort()
+print(marks)
+
+# 3.
+r = 100
+print(type(r))
+r = "saloni"
+print(type(r))
+# No,we can change the type od a variable  in python
+
+# 4.
+li = [5, 7, 3, 9] 
+sums = sum(li)
+print(sums)
+
+# 5.
+t = (3, 7, 0, 5, 0, 2, 0)
+c = t.count(0)
+print(c)
