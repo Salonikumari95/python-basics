@@ -393,4 +393,83 @@ print(fact)
 n = 3
 for i in range(1, n+1):
     print("*"*i)
+
+
+
+#  1.⁠ ⁠Create a Class "Programmer" for storing information of few programmers
+# working at Microsoft.
+
+# 2.⁠ ⁠Write a class "calculator" capable of finding square,
+# cube and square root of a number.
+
+# 3.⁠ ⁠Create a class with a class attribute a; create an object
+# from it and set 'a' directly using object.ao. Does this change the 
+# class attribute?
+
+# 4.⁠ ⁠Add a static method in problem 2, to greet the user with hello.
+
+# 5.⁠ ⁠Write a class Train which has methods to book a ticket,
+# get status (no of seats) and get fare information of train running under
+# Indian Railways.
+
+# 6.⁠ ⁠Can you change the self-parameter inside a class to something
+# else (say "harry"). Try changing self to "sif" or "harry" and see the 
+# effects.
+
+ 
+# 1.
+
+
+class Programmer:
+    company = "Microsoft"
+
+    def _init_(self, name, product):
+        self.name = name
+        self.product = product
+
+    def showInfo(self):
+        print(f"The name of the programmer is {self.name} and he/she works on {self.product} at {self.company}")
+
+
+# Creating objects
+p1 = Programmer("Saloni", "Skype")
+p2 = Programmer("Ravi", "Edge")
+
+p1.showInfo()
+p2.showInfo()
+
+# 2.
+
+
+class calculator:
+    def __init__(self, num):
+        self.num = num
+     
+    def square(self):
+        print(self.num**2)
+
+    def cube(self):
+        print(self.num**3)    
+
+    def squareRoot(self):
+        print(self.num**1/2)
     
+    n = 6
+
+
+calc = calculator(n)
+calc.square()
+calc.cube()
+calc.squareRoot()
+
+
+# 3.
+
+class sample:
+    a = "saloni"
+
+   
+obj = sample()
+obj.a = "Sallo" 
+print(sample.a)
+print(obj.a)    
