@@ -122,7 +122,7 @@ print(type(r))
 # No,we can change the type od a variable  in python
 
 # 4.
-li = [5, 7, 3, 9] 
+li = [5, 7, 3, 9]
 sums = sum(li)
 print(sums)
 
