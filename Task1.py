@@ -1,5 +1,4 @@
 from abc import ABC, abstractmethod
-from functools import reduce
 # Class Object constructor
 print("-"*40)
 
@@ -174,19 +173,4 @@ nums = {x for x in [1, 2, 2, 3, 3, 4]}
 print(nums)
 print("-"*40)
 
-# lambda, map, Filter,Reduce
 
-nums = [1, 2, 3, 4]
-
-# Lambda + maps
-square = list(map(lambda x: x**2, nums))
-print(square)
-
-# Filter
-even = list(filter(lambda x: x % 2 == 0, nums))
-print(even)
-
-# Reduce
-sum_all = reduce(lambda a, b: a + b, nums)
-print(sum_all)
-print("-"*40)
